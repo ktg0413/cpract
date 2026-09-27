@@ -20,4 +20,5 @@ int main(void) {
     } else {
         printf("NO");
     }
+    return 0;
 }
