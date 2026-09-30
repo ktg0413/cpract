@@ -7,7 +7,7 @@ bool bounds(const int *a, size_t n, int *lo, int *hi) {
         return false;
     } else {
         *lo = a[0];
-        *hi = a[1];
+        *hi = a[0];
         for(int i = 0; i < n; i++) {
             if(a[i] > *hi) {
                 *hi = a[i];
@@ -35,7 +35,7 @@ int main(void) {
         a[i] = b;
     }
 
-    if (!bounds(&a, n, &lo, &hi)) {
+    if (!bounds(a, n, &lo, &hi)) {
         printf("ERROR");
         return 1;
     } else {
