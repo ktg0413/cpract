@@ -21,5 +21,5 @@ int main(void) {
     } else {
         printf("%d %d", q, r);
     }
-
+    return 0;
 }
